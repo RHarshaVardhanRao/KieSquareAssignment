@@ -14,7 +14,7 @@ y = df['target']
 # Load the saved model pipeline
 @st.cache_resource
 def load_model():
-    with open(r'B:\Harsha\Praxis\Kie Square Assigment\2.)Datascience Life Cycle\xgb_model_pipeline.pkl', 'rb') as f:
+    with open(r'xgb_model_pipeline.pkl', 'rb') as f:
         return pickle.load(f)
 
 # Function to make predictions
